@@ -2,6 +2,7 @@ import torch
 from GPT.gpt_model import GPTModel
 from config.config import GPT_CONFIG
 
+#Example of how the model works
 torch.manual_seed(123)
 
 # 2 input texts with 4 tokens(context length) each
@@ -17,4 +18,5 @@ print("Input batch shape:\n", batch_input.shape)
 
 print("\nOutput logits:\n", logits)
 print("\nOutput shape:", logits.shape)
+
 
